@@ -50,7 +50,7 @@ The following documents can help you sort out issues with GitHub accounts and mu
 
 ## Code of Conduct
 
-You can read about the Contoso Real Estate project code of conduct [here][coc-contoso-real-estate].
+You can read about the Contoso Real Estate project code of conduct [here][coc-azure-search-openai-javascript].
 
 This project is also governed by the [Microsoft Open Source Code of Conduct](#signing-the-cla). For more information see the [Code of Conduct FAQ][coc-faq] or contact [opencode@microsoft.com][coc-email] with any additional questions or comments.
 
@@ -139,7 +139,7 @@ Note: the optional commit `-a` command line option will automatically "add" and 
 git push origin my-fix-branch
 ```
 
-12. In GitHub, send a pull request to `contoso-real-estate:main`.
+12. In GitHub, send a pull request to `azure-search-openai-javascript:main`.
 
 ### Reviewing a Pull Request
 
