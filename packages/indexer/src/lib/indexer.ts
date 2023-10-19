@@ -71,7 +71,7 @@ export class Indexer {
             sortable: false,
             facetable: false,
             vectorSearchDimensions: 1536,
-            vectorSearchProfile: 'default',
+            vectorSearchProfile: 'default-profile',
           },
           {
             name: 'category',
@@ -105,11 +105,29 @@ export class Indexer {
         vectorSearch: {
           algorithms: [
             {
-              name: 'default',
+              name: 'default-algorithm',
               kind: 'hnsw',
               parameters: {
                 metric: 'cosine',
               },
+            },
+          ],
+          vectorizers: [
+            {
+              name: 'default-vectorizer',
+              kind: 'azureOpenAI',
+              azureOpenAIParameters: {
+                // resourceUri: env.OPENAI_ENDPOINT,
+                // apiKey: env.OPENAI_KEY,
+                // deploymentId: env.OPENAI_DEPLOYMENT_NAME,
+              },
+            },
+          ],
+          profiles: [
+            {
+              name: 'default-profile',
+              algorithm: 'default-algorithm',
+              vectorizer: 'default-vectorizer',
             },
           ],
         },
